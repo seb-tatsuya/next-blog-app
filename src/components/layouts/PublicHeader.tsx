@@ -11,13 +11,13 @@ import {
 export default function PublicHeader() {
   return (
     <div>
-      <header className="border-b bg-blue-200">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+      <header className="bg-red-400 border-b">
+        <div className="container mx-atuo px-4 py-4 flex items-center justify-between">
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
                 <Link href="/" legacyBehavior passHref>
-                  <NavigationMenuLink className="text-xl font-bold">
+                  <NavigationMenuLink className="text-xl font-bold ">
                     Blog
                   </NavigationMenuLink>
                 </Link>
@@ -33,7 +33,7 @@ export default function PublicHeader() {
               <Link href="/login">ログイン</Link>
             </Button>
             <Button asChild>
-              <Link href="/register">新規登録</Link>
+              <Link href="/register">登録</Link>
             </Button>
           </div>
         </div>

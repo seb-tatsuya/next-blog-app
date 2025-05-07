@@ -7,7 +7,7 @@ async function main() {
   // クリーンアップ
   await prisma.post.deleteMany();
   await prisma.user.deleteMany();
-  const hashedPassword = await bcrypt.hash("password123", 12); // 暗号化
+  const hashPassword = await bcrypt.hash("password123", 12); // 暗号化
   const dummyImages = [
     "https://picsum.photos/seed/post1/600/400", // ダミー画像
     "https://picsum.photos/seed/post2/600/400",
@@ -18,7 +18,7 @@ async function main() {
     data: {
       email: "test@example.com",
       name: "Test User",
-      password: hashedPassword,
+      password: hashPassword,
       posts: {
         create: [
           {
