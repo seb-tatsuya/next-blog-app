@@ -11,7 +11,7 @@ import {
 export default function PublicHeader() {
   return (
     <div>
-      <header className="bg-red-400 border-b">
+      <header className="bg-blue-400 border-b">
         <div className="container mx-atuo px-4 py-4 flex items-center justify-between">
           <NavigationMenu>
             <NavigationMenuList>
