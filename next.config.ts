@@ -6,9 +6,18 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "picsum.photos", // 画像のホスト名（使用可能にする）
+        hostname: "picsum.photos",
+      },
+      {
+        protocol: "https",
+        hostname: "mxyjtergpkdjdiofnyqb.supabase.co",
       },
     ],
+  },
+  experimental: {
+    serverActions: {
+      bodySizeLimit: "100mb", // 必要に応じて値を変更
+    },
   },
 };
 
